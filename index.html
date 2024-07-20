@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+         <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+       </div>  
+      </nav>
+     </header>
+    <main>
+        <section id="home" class="d-flex align-items-center justify-content-center text-center" style="height: 100vh; background: url('images/profile.jpg') no-repeat center center; background-size: cover;">
+         <div class="overlay" style="background-color: rgba(0, 0, 0, 0.5); padding: 20px;">
+           <h1 class="text-white">Welcome to my portfolio</h1>
+           <p class="text-white">Hi, I'm Unathi [Prettyboy], a front-end developer.</p>
+         </div> 
+        </section>
+        <section id="about" class="container my-5">
+            <h2 class="text-center">About Me</h2>
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <img src="images/profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle mb-3">
+                </div>
+                <div class="col-md-8">
+                   <p>I'm a student at Tshwane University of Technology, I'm doing my third year in Administrative Management Finance.</br>I'm a self-taught front-end developer, I've never worked or done a project for someone or company. I'm also a self-taught graphic designer.</p>
+              </div>
+            </div>
+        </section>
+        <section id="projects" class="container my-5">
+            <h2 class="text-center">My Projects</h2>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Project Title</h5>
+                    <p class="card-text">Project description.</p>
+                    <a href="#" class="btn btn-primary" target="_blank">View Project</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat for more projects -->
+            </div>
+          </section>
+          
+          <section id="blog" class="container my-5">
+            <h2 class="text-center">Blog</h2>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h5 class="card-title">Blog Post Title</h5>
+                    <p class="card-text">Blog post excerpt.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat for more blog posts -->
+            </div>
+          </section>          
+          <section id="contact" class="container my-5">
+            <h2 class="text-center">Contact Me</h2>
+            <form class="text-center">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" class="form-control" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </section>          
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>   
+</html>
